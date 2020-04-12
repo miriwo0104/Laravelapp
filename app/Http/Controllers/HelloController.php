@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Person;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class HelloController extends Controller
 {
     public function index(Request $request) {
-      $items = DB::select('select * from people');
+        $items = Person::all();
         return view('hello.index', ['items' => $items]);
     }
 
