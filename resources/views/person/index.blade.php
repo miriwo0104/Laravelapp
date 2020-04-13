@@ -25,3 +25,7 @@
     
     
 @endsection
+
+@section('footer')
+    copyright 2020 miriwo.
+@endsection

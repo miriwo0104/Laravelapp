@@ -22,3 +22,12 @@ Route::post('/hello', 'HelloController@post');
 
 //Route::get('/person', 'PersonController@index');
 Route::get('/test', 'PersonController@index');
+
+Route::get('/person/find', 'PersonController@find');
+Route::post('/person/find', 'PersonController@search');
+
+Route::get('/hello/add', 'HelloController@add');
+Route::post('/hello/add', 'HelloController@create');
+
+Route::get('/hello/settings', 'HelloController@settings');
+Route::post('/hello/settings', 'HelloController@update');
